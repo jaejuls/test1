@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyTime Checker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div>
+        <h1 id="mainstopwatch" >
+            00:00:00
+        </h1>
+        <div>
+            <button id="mainFirstButton" onclick="mainFirstBtnClick()">Lap</button>
+            <button id="mainSecondButton" onclick="mainSecondBtnClick()">Start</button>
+        </div>
+        <div class="mainLapArea">
+            <ul class="mainLapList"></ul>
+        </div>
+    </div>
+    <div>
+        <h1 id = "substopwatch" >
+            00:00:00
+        </h1>
+        <div>
+            <button id="subFirstButton" onclick="subFirstBtnClick()">Lap</button>
+            <button id="subSecondButton" onclick="subSecondBtnClick()">Start</button>
+        </div>
+        <div class="subLapArea">
+            <ul class="subLapList"></ul>
+        </div>
+    </div>
+    <form id="todo-form">
+        <input type="text" placeholder="Write fdsaa To Do and Press Enter" required />
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="memo" style="display:none">
+        <button id="addmemobutton">Add Memo</button>
+        <div id="memoarea"></div>
+        <button id="savememobutton">Save</button>
+    </div>
+    <script src="js/mainstopwatch.js"></script>
+    <script src="js/substopwatch.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/memo.js"></script>
+</body>
+</html>
